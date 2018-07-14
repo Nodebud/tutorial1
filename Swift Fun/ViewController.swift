@@ -3,7 +3,7 @@
 //  Swift Fun
 //
 //  Created by Bryan Azorsky on 7/12/18.
-//  Copyright © 2018 Bryan Azorsky. All rights reserved...
+//  Copyright © 2018 Bryan Azorsky. All rights reserved.
 //
 
 import UIKit
