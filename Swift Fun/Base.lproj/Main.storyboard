@@ -31,18 +31,45 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oMH-2h-ES8"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IpG-RG-OWM">
+                                <rect key="frame" x="135" y="197" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="XDR-1l-WaM"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ff-Q7-nzd">
+                                <rect key="frame" x="135.5" y="104" width="51" height="31"/>
+                            </switch>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qoo-CH-MWV">
+                                <rect key="frame" x="135" y="159" width="50" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="D68-nG-Fog" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CKN-xY-a6c"/>
                             <constraint firstItem="Daz-E5-8Mo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Egc-Mi-SlA"/>
+                            <constraint firstItem="IpG-RG-OWM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q8z-oO-ZOs"/>
+                            <constraint firstItem="Qoo-CH-MWV" firstAttribute="top" secondItem="7ff-Q7-nzd" secondAttribute="bottom" constant="24" id="WI2-XN-l9n"/>
                             <constraint firstItem="Daz-E5-8Mo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cBt-om-Da1"/>
                             <constraint firstItem="D68-nG-Fog" firstAttribute="top" secondItem="Daz-E5-8Mo" secondAttribute="bottom" constant="10" id="g3e-4p-ITa"/>
+                            <constraint firstItem="Qoo-CH-MWV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hG3-lh-8XG"/>
+                            <constraint firstItem="7ff-Q7-nzd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jlG-ir-Wfc"/>
+                            <constraint firstItem="IpG-RG-OWM" firstAttribute="top" secondItem="Qoo-CH-MWV" secondAttribute="bottom" constant="8" id="lnw-rB-ieW"/>
+                            <constraint firstItem="Daz-E5-8Mo" firstAttribute="top" secondItem="IpG-RG-OWM" secondAttribute="bottom" constant="2.5" id="m3R-eZ-tZc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="7ff-Q7-nzd" id="AZR-rK-NCq"/>
+                        <outlet property="bottomTextField" destination="IpG-RG-OWM" id="PnI-q9-nxa"/>
                         <outlet property="myLabel" destination="Daz-E5-8Mo" id="rh5-DQ-6gf"/>
+                        <outlet property="topTextField" destination="Qoo-CH-MWV" id="KZh-q8-9Zb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
